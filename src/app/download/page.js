@@ -1,9 +1,8 @@
-
+import ViewInvoice from "../store/client/invoice/view";
 export default function Download() {
-    return (
+  return (
     <>
-    <h1>Aye</h1>
+     <ViewInvoice />
     </>
-    )
-  }
-  
+  );
+}

@@ -2,7 +2,8 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useInvoiceStore } from "../store/client";
+import { useInvoiceStore } from "../../store/client";
+import Link from 'next/link'
 
 const InvoiceForm = () => {
   const { setInvoiceData } = useInvoiceStore();
@@ -124,6 +125,12 @@ const InvoiceForm = () => {
           </button>
         </Form>
       </Formik>
+      <Link
+            href="/download"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
+          >
+            Download
+          </Link>
     </div>
   );
 };
